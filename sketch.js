@@ -54,7 +54,9 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
-	
+  boxSprite1.display();
+  boxSprite2.display();
+  boxSprite3.display();
 
   drawSprites();
  
