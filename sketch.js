@@ -13,11 +13,15 @@ function preload()
 
 function setup() {
 	createCanvas(800, 700);
+	
+	engine = Engine.create();
+	world = engine.world;
+	
 	rectMode(CENTER);
 	
-	boxSprite3=createSprite(400, 650, 200, 20);
-	boxSprite2=createSprite(500, 600, 20, 100);
-	boxSprite1=createSprite(300, 600, 20, 100);
+	boxSprite3=new Box(400, 650, 200, 20);
+	boxSprite2=new Box(500, 600, 20, 100);
+	boxSprite1=new Box(300, 600, 20, 100);
 
 	packageSprite=createSprite(width/2, 80, 10,10);
 	packageSprite.addImage(packageIMG)
